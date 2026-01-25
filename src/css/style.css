@@ -241,6 +241,49 @@ button {
   grid-column: 3;
 }
 
+/* categories styles */
+.shop-title {
+  margin-bottom: 0.5rem;
+}
+
+.categories {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.category-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+}
+
+.category-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.category-card span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 500px) {
   body {
     max-width: 1080px;
